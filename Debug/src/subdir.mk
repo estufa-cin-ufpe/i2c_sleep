@@ -4,13 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/i2c_sleep.c 
+../src/i2c.c \
+../src/i2c_sleep.c \
+../src/pwr.c 
 
 SRC_OBJS += \
-./src/i2c_sleep.o 
+./src/i2c.o \
+./src/i2c_sleep.o \
+./src/pwr.o 
 
 C_DEPS += \
-./src/i2c_sleep.d 
+./src/i2c.d \
+./src/i2c_sleep.d \
+./src/pwr.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
